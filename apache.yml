@@ -3,8 +3,8 @@
   hosts: web
   become: true
   become_method: su
-  remote_user: rhel
-  become_flags: '-'
+  become_user: rhel
+  become_exe: sudo su -
   tasks:
   - name: Latest Apache version installed
     ansible.builtin.yum:
