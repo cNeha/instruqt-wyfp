@@ -3,7 +3,7 @@
   hosts: web
   become: true
   become_method: su
-  become_user: rhel
+  remote_user: rhel
   become_flags: '-'
   tasks:
   - name: Latest Apache version installed
