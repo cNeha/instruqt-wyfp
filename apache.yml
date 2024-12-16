@@ -4,7 +4,7 @@
   become: true
   tasks:
   - name: Latest Apache version installed
-    ansible.builtin.package:
+    ansible.builtin.yum:
       name: httpd
       state: latest
   - name: Apache enabled and running
