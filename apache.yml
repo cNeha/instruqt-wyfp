@@ -4,7 +4,7 @@
   become: true
   become_user: rhel
   become_method: su
-  become_flags: "-l"
+  become_flags: '-'
   tasks:
   - name: Latest Apache version installed
     ansible.builtin.yum:
