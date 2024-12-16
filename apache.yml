@@ -3,7 +3,6 @@
   hosts: web
   become: true
   become_method: su
-  become_user: rhel
   become_exe: sudo su -
   tasks:
   - name: Latest Apache version installed
