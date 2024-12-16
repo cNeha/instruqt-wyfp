@@ -2,7 +2,6 @@
 - name: Apache server installed
   hosts: web
   become: true
-  become_user: rhel
   become_method: su
   become_flags: '-'
   tasks:
