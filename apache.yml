@@ -2,7 +2,8 @@
 - name: Apache server installed
   hosts: web
   become: true
-  become_method: sudo
+  become_method: su
+  become_flags: "-l"
   tasks:
   - name: Latest Apache version installed
     ansible.builtin.yum:
